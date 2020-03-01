@@ -56,8 +56,9 @@ class MainController{
             print $page;
         } else {
             // temporary solution
-            print 'incorrect data';
+            print 'incorrect data<pre>';
             var_dump($inputErrorList);
+            print '</pre>';
         }
 
 
