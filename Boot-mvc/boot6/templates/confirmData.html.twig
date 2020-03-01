@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <h1>Enquiry received</h1>
+    <p>
+        Thank you for your enquiry - we aim to respond within 2 working days.
+    </p>
+    <h2>Data received:</h2>
+    <div class="form-group">
+        <label for="cName">Your name</label>
+        <input id="cName" class="form-control" value="{{ cName }}" readonly>
+    </div>
+    <div class="form-group">
+        <label for="cEmail">Email address</label>
+        <input id="cEmail" class="form-control" value="{{ cEmail }}" readonly>
+    </div>
+    <div class="form-group">
+        <label for="enquiry">Your enquiry</label>
+        <textarea id="enquiry" class="form-control" rows="3" readonly>{{ enquiry }}</textarea>
+    </div>
+
+{% endblock %}
