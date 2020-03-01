@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "testserver": "php -S 127.0.0.1:5050 -t ./public"
+  },
+  "autoload": {
+    "psr-4": {
+      "TUDublin\\": "src"
+    }
+  }
+}
